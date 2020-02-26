@@ -15,9 +15,8 @@
     <!-- [ FONTS ]-->
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
+<body style="margin-top:100px;">
 <!-- Site Navigation-->
 <div class="zuc-nav-wrapper" data-nav-height="">
     <!-- Mobile Navigation-->
@@ -102,7 +101,7 @@
     <!-- Mobile Only Nav ------------------------>
     <div class="zuc-mobile-nav" data-mobile-menu="">
       <!-- Top Branding CTA-->
-      <div class="zuc-mobile-nav-content"><a href="/Zuc/index" title="Zucora Home"><img src="../Images/Zuc/images/ZucoraHome-brand-white.svg" alt="Zucora Home"></a>
+      <div class="zuc-mobile-nav-content"><a href="/Zuc/index" title="Zucora Home"><img src="/Images/Zuc/images/ZucoraHome-brand-white.svg" alt="Zucora Home"></a>
         <!-- Primary CTA Button--><a class="zuc-btn zuc-btn-primary" href="../Zuc/formservicerequest" title="Service Request">Service Request</a>
       </div>
       <!-- Accordion Nav ------------------------------------------>
@@ -174,233 +173,123 @@
     </div>
   </div>
     <!-- Main page content-->
-<section class="zuc-hero-header-mask">
-  <!-- Media container-->
-  <div class="zuc-hero-media-container" aria-describedby="header-caption">
-    <!-- Video or Image ( Image can also be added as BKG to above container )-->
-    <video class="zuc-hero-video" poster="https://i.vimeocdn.com/video/813519915.jpg" style="background-image: url('https://i.vimeocdn.com/video/813519915.jpg'); background-size: cover;" preload="auto" autoplay muted loop>
-       <source src="https://player.vimeo.com/external/358865169.hd.mp4?s=b6a99a0869d6bdad9d922a732c7f8104df39c618&profile_id=175" type="video/mp4">
-      <source src="https://player.vimeo.com/external/358865169.sd.mp4?s=7cdf8e9c8553f2fdc3c9f3942e2bc2d44497e379&profile_id=165" type="video/mp4">
-    </video>
-  </div>
-  <!-- Header Shield-->
-  <div class="zuc-shield zuc-icon--primary">
-    <div class="zuc-shield-content u-text-center">
-      <h1 class="zuc-shield-title">Welcome to Smarter Living</h1>
-      <div class="zuc-shield-subtitle u-uppercase">Convenient. Intelligent. Innovative.</div><a class="zuc-btn zuc-btn-secondary" href="javascript:void(0)" title="Smarter Living" onclick="toggleModal('[data-smarter-video]')">Watch Video</a>
+ <section class="zuc-secondary-header --slb-header" aria-describedby="" style="background-image:url('../Images/Zuc/images/smarter-living/interior-house-header.png');">
+      <!-- Hero Content - Wrapper-->
+      <div class="zuc-slb-content">
+        <!-- Top Content-->
+        <div class="zuc-hero-row flex flex-vert-end">
+          <div class="zuc-slb-left u-text-left">
+            <h1 class="u-font-serif u-zuc-indigo">Smarter Living is very rewarding.</h1>
+            <p class="u-zuc-darkindigo">With your Smarter Living Plan, you automatically receive Member benefits that include priority service, preferred pricing, special offers and personalized service.</p>
+            <p class="u-zuc-darkindigo"></p><a class="--member" href="javascript:void(0)" title="Member Login" onclick="toggleModal('[data-modal-login]')">I’m already a Member</a><a class="zuc-btn zuc-btn-secondary u-uppercase" href="/Zuc/ecomplan" title="Get Started Today">Get Started Today</a>
+          </div>
+          <div class="zuc-hero-right"><img class="--zuc-slb-img-position" src="../Images/Zuc/images/smarter-living/girl-blob-cutout-header.png" title="A smiling woman with her arms crossed"></div>
+        </div>
+        <!-- Bottom Container-->
+        <div class="zuc-hero-row u-soft-shadow --slb-hero-grid-row">
+          <h2 class="u-zuc-indigo u-font-serif">Exceptional Member benefits.</h2>
+          <div class="zuc-header-tiles flex flex-vert-start flex-hor-between">
+            <!-- Tile ------------------>
+            <!-- - Iterate over each value in the Tiles object-->
+            <div class="zuc-header-tile"><img class="zuc-header-tile-icon" src="../Images/Zuc/images/icons/icon-preferred-pricing.svg" alt="Icon of a price tag with a star on it">
+              <h6 class="u-zuc-indigo u-bold">PREFERRED PRICING</h6>
+              <p class="u-zuc-darkindigo">Receive special Member pricing on Smarter Living Products.</p>
+            </div>
+            <div class="zuc-header-tile"><img class="zuc-header-tile-icon" src="../Images/Zuc/images/icons/icon-premium-pricing.svg" alt="Icon of a piggy bank with coins dropping into it">
+              <h6 class="u-zuc-indigo u-bold">EARN REWARDS</h6>
+              <p class="u-zuc-darkindigo">Earn Member rewards on future purchases.</p>
+            </div>
+            <div class="zuc-header-tile"><img class="zuc-header-tile-icon" src="../Images/Zuc/images/icons/icon-personalized-service.svg" alt="TODO">
+              <h6 class="u-zuc-indigo u-bold">PERSONALIZED PLAN</h6>
+              <p class="u-zuc-darkindigo">Select the plan that is right for you and fits your budget.</p>
+            </div>
+          </div>
+        </div>
+      </div><img class="zuc-hero-bottom-wave" src="../Images/Zuc/images/shapes/hero-wave-bottom.svg" alt="A wave shape">
+      <div class="u-screenreader" id="header-caption">BRIEFLY DESCRIBE VIDEO IN MARKETING LANGUAGE - TODO</div>
+    </section>
+    <!-- Modal Container-->
+    <div class="zuc-modal --video-modal" data-smarter-video onclick="toggleModal('[data-smarter-video]')">
+      <!-- Modal Content-->
+      <div class="zuc-modal-content" onclick="event.stopPropagation()">
+        <!-- Zucora Home Introductory Video-->
+        <video class="zuc-modal-video" poster="https://i.vimeocdn.com/video/739725837.jpg" style="background-image: url('https://i.vimeocdn.com/video/739725837.jpg'); background-size: cover;" preload="auto" controls>
+          <source src="https://player.vimeo.com/external/301216708.hd.mp4?s=324fdb4fb3b75d1fb3f6edd16a3068675a7b6cf7&amp;profile_id=175" type="video/mp4">
+          <source src="https://player.vimeo.com/external/301216708.hd.mp4?s=324fdb4fb3b75d1fb3f6edd16a3068675a7b6cf7&amp;profile_id=174" type="video/mp4">
+          <source src="https://player.vimeo.com/external/301216708.hd.mp4?s=324fdb4fb3b75d1fb3f6edd16a3068675a7b6cf7&amp;profile_id=165" type="video/mp4">
+        </video>
+      </div>
     </div>
-  </div>
-  <div class="u-screenreader" id="header-caption">BRIEFLY DESCRIBE VIDEO IN MARKETING LANGUAGE - TODO</div>
-</section>
-<!-- Modal Container-->
-<div class="zuc-modal --video-modal" data-smarter-video onclick="toggleModal('[data-smarter-video]')">
-  <!-- Modal Content-->
-  <div class="zuc-modal-content" onclick="event.stopPropagation()">
-    <!-- Zucora Home Introductory Video-->
-    <video class="zuc-modal-video" poster="https://i.vimeocdn.com/video/745108186_1920x1080.jpg" style="background-image: url('https://i.vimeocdn.com/video/745108186_1920x1080.jpg'); background-size: cover;" preload="auto" controls>
-      <source src="https://player.vimeo.com/external/305566784.hd.mp4?s=a2883c78396a5719db67ac45876282a28d7a623e&profile_id=175&autoplay=1" type="video/mp4">
-      <source src="https://player.vimeo.com/external/305566784.hd.mp4?s=a2883c78396a5719db67ac45876282a28d7a623e&profile_id=174&autoplay=1" type="video/mp4">
-      <source src="https://player.vimeo.com/external/305566784.hd.mp4?s=a2883c78396a5719db67ac45876282a28d7a623e&profile_id=165&autoplay=1" type="video/mp4">
-    </video>
-  </div>
-</div>
-<section class="zuc-featured-block --home-custom-hoist">
-  <div class="zuc-featured flex flex-wrap flex-vert-center">
-    <div class="zuc-featured-content">
-      <div class="zuc-title-container flex">
-        <h4>Convenient</h4>
-        <div class="zuc-title-flag">
-          <div class="--green"></div>
+    <section class="zuc-slb-benefits flex">
+      <div class="zuc-image-box"></div>
+      <div class="zuc-cta-box u-soft-shadow">
+        <h3 class="u-color-pure-white u-font-serif">Earn rewards while protecting your home.</h3>
+        <p class="u-color-white">As a Smarter Living Member, you receive reward points with every plan, product and service purchase.</p><a class="zuc-btn zuc-btn-hollow u-soft-shadow" href="/Zuc/smarterliving#how-it-works" title="How it works">HOW IT WORKS</a><img class="zuc-coral-wave" src="../Images/Zuc/images/graphics/graphic_zigzag_coral.svg" alt="Decorative coral wave">
+      </div>
+      <div class="zuc-info-box u-soft-shadow">
+        <h4 class="u-text-uppercase u-zuc-darkindigo u-bold">YOUR MEMBER BENEFITS INCLUDE:</h4>
+        <ul class="--list-margin u-light">
+          <li>24/7 Service Request submissions</li>
+          <li>National network of professional contractors</li>
+          <li>Customized plan to fit your budget</li>
+          <li>Fast response when you need it most</li>
+          <li>Special Member pricing on Smarter Home Products</li>
+          <li>Valuable rewards for future purchases</li>
+        </ul>
+      </div><img class="zuc-slb-benefits-bg" src="../Images/Zuc/images/shapes/blob-cutoff.svg" alt="An abstract green and blue blob shape">
+    </section>
+    <section class="zuc-featured-block --graphic-blob">
+      <div class="zuc-featured flex flex-wrap">
+        <div class="zuc-featured-content">
+          <div class="zuc-title-container flex">
+            <h4>Valuable rewards</h4>
+            <div class="zuc-title-flag">
+              <div class="--green"></div>
+            </div>
+          </div>
+          <h2 class="u-font-serif u-zuc-indigo">Earn 10 points for every $1.</h2>
+          <p>Earn valuable Smarter Living Rewards with your plan, product and service purchases. By earning 10 points for every $1 spent, means your points will accumulate quickly and become valuable for future product purchases.</p><br><br><br>
+          <div class="d-grey-slash"><img class="--image" src="../Images/Zuc/images/graphics/graphic_slash_grey.svg" alt="Decorative grey slashes."></div>
+        </div>
+        <div class="zuc-featured-image flex flex-hor-center">
+          <div class="zuc-featured-media"><img src="../Images/Zuc/images/shared/woman-online-purchase.png"></div><img class="zuc-blob" src="../Images/Zuc/images/shapes/round-blob-solid.svg" alt="An abstract green and blue blob shape">
         </div>
       </div>
-      <h2 class="u-font-serif u-zuc-indigo">Protect your home with a Smarter Living Plan.</h2>
-      <p>When major appliances malfunction, your furniture becomes stained or accidentally damaged, or your home comfort systems don't operate the way they should, we've got you covered. A Smarter Living Plan from ZucoraHome can help remove the stress out of managing your home while protecting your budget from unexpected repairs. Enjoy peace of mind with priority service delivered by our national network of trained, qualified professionals.</p>
-      <a class="zuc-btn zuc-btn-secondary" href="/Zuc/serviceplans" title="See all of our service plans">Learn More</a>
-    </div>
-    <div class="zuc-featured-image flex flex-hor-between flex-wrap --home-icons">
-      <div class="zuc-hp-icon --hp-icon-base"><img class="icon-img" src="../Images/Zuc/images/icons/icon-tech-network.svg" alt="A team of two service technicians.">
-        <p class="u-bold u-uppercase">Technician Network</p>
-      </div>
-      <div class="zuc-hp-icon --hp-icon-base"><img class="icon-img" src="../Images/Zuc/images/icons/icon-premium-pricing.svg" alt="Coins entering piggy bank to save money by earning rewards.">
-        <p class="u-bold u-uppercase">Earn Rewards</p>
-      </div>
-      <div class="zuc-hp-icon --hp-icon-base"><img class="icon-img" src="../Images/Zuc/images/icons/icon-24-7-service.svg" alt="Around the clock 24 hour solutions service">
-        <p class="u-bold u-uppercase">Solutions Team</p>
-      </div>
-      <div class="zuc-hp-icon --hp-icon-base"><img class="icon-img" src="../Images/Zuc/images/icons/icon-fast-service.svg" alt="Speeding time-clock representing quick service">
-        <p class="u-bold u-uppercase">Rapid Response</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="zuc-hero-slider">
-  <!-- Slide Container-->
-  <div class="zuc-slider-container" data-slide-container>
-    <!-- First Slide-->
-    <div class="zuc-slide flex flex-vert-center flex-hor-end --active-slide" data-slide="1">
-      <!-- - Slide text content on the left-->
-      <div class="zuc-slide-content u-soft-shadow d-green-bar">
-        <h5 class="zuc-slide-title u-font-serif u-zuc-indigo">Plan for the unexpected.</h5>
-        <p class="zuc-slide-text">A Smarter Living Plan offers peace of mind and stress relief from unexpected product failures and breakdowns.</p><a class="zuc-btn zuc-btn-secondary" href="/Zuc/smarterliving" title="What is Smarter Living">How it works</a>
-      </div>
-      <!-- - Slide Image-->
-      <div class="zuc-slide-media u-soft-shadow" aria-describedby="slide-1-dsc" style="background-image: url('../Images/Zuc/images/homepage/slider-img-1.png');">
-        <div class="u-screenreader" id="slide-1-dsc">Woman frustrated by a broken washing machine calls ZucoraHome for a service request</div>
-      </div>
-    </div>
-    <!-- Second Slide-->
-    <div class="zuc-slide flex flex-vert-center flex-hor-end" data-slide="2">
-      <!-- - Slide text content on the left-->
-      <div class="zuc-slide-content u-soft-shadow d-green-bar">
-        <h5 class="zuc-slide-title u-font-serif u-zuc-indigo">Protect your budget.</h5>
-        <p class="zuc-slide-text">Avoid the high cost of product malfunctions and breakdowns.</p><a class="zuc-btn zuc-btn-secondary" href="/Zuc/serviceplans" title="Service Plans">See Plans<i class="fas fa-arrow-right"></i></a>
-      </div>
-      <!-- - Slide Image-->
-      <div class="zuc-slide-media u-soft-shadow" aria-describedby="slide-2-dsc" style="background-image: url('../Images/Zuc/images/homepage/slider-img-2.png');">
-        <div class="u-screenreader" id="slide-2-dsc">A couple studies their finances with a concerned look as they try to plan for eventualities that Zucora can help with.</div>
-      </div>
-    </div>
-    <!-- Third Slide-->
-    <div class="zuc-slide flex flex-vert-center flex-hor-end" data-slide="3">
-      <!-- - Slide text content on the left-->
-      <div class="zuc-slide-content u-soft-shadow d-green-bar">
-        <h5 class="zuc-slide-title u-font-serif u-zuc-indigo">Enjoy the Rewards.</h5>
-        <p class="zuc-slide-text">Earn valuable Rewards from Smarter Living. With every purchase you make as a Smarter Living Member, you will receive reward points to redeem online and at select retail locations.</p><a class="zuc-btn zuc-btn-secondary" href="/Zuc/smarterlivingmembershipbenefits" title="Smarter Living Benefits">See Benefits<i class="fas fa-arrow-right"></i></a>
-      </div>
-      <!-- - Slide Image-->
-      <div class="zuc-slide-media u-soft-shadow" aria-describedby="slide-3-dsc" style="background-image: url('../Images/Zuc/images/homepage/slider-img-3.png');">
-        <div class="u-screenreader" id="slide-3-dsc">Little girl sits in her father's lap as he accesses his Smarter Living Rewards account on his ipad.</div>
-      </div>
-    </div>
-  </div>
-  <!-- Slideshow Controls-->
-  <div class="zuc-slider-controls flex flex-hor-center flex-vert-center" aria-role="menu">
-    <div class="zuc-slide-selector --active" data-move-slide="1" aria-role="menuitem" aria-label="Go to slide 1"></div>
-    <div class="zuc-slide-selector" data-move-slide="2" aria-role="menuitem" aria-label="Go to slide 2"></div>
-    <div class="zuc-slide-selector" data-move-slide="3" aria-role="menuitem" aria-label="Go to slide 3"></div>
-  </div>
-  <!-- Backround element-->
-  <div class="zuc-slider-bkg">
-    <object data="../Images/Zuc/images/shapes/hero-slider-bg.svg" type="image/svg+xml"></object>
-  </div>
-</section>
-
-<section class="zuc-featured-block --graphic-blob --center-blob --short-text">
-  <div class="zuc-featured flex flex-wrap">
-    <div class="zuc-featured-content">
-      <div class="zuc-title-container flex">
-        <h4>Intelligent</h4>
-        <div class="zuc-title-flag">
-          <div class="--green"></div>
+    </section>
+    <section class="zuc-tri-module flex flex-wrap flex-hor-center"><img class="zuc-tri-module-wave" src="../Images/Zuc/images/shapes/wave-shape-bottom-flat.svg" alt="An abstract conrete colored wave shape">
+      <div class="zuc-tri-box --review-box">
+        <div class="zuc-quote-badge flex flex-vert-center flex-hor-center u-soft-shadow"><img src="../Images/Zuc/images/icons/icon-quote.svg"></div>
+        <h2 class="u-font-serif u-zuc-indigo u-text-center">See what our Members say</h2>
+        <div class="zuc-review-text u-zuc-darkindigo">
+          <p>The service technician called to let me know he was running ahead of schedule and asked if he could come an hour earlier. Yes, that was great and I was thrilled. When he arrived he asked about the stain on the kitchen chair, what I had done to remove it, and took a photo. It took him less than 10 minutes and he was great - he even asked if he could use our water and electrical outlet. When the job was complete he let me know how I could avoid such stains in the future. It is a pleasure to deal with true professionals.</p>
         </div>
-      </div>
-      <h2 class="u-font-serif u-zuc-indigo">Experience the Rewards.</h2>
-      <p>Smarter Living Plans take care of your appliances, furniture, and home systems. You receive exclusive access to the benefits of being a Smarter Living Member. Enjoy free maintenance and cleaning programs, preferred Member pricing, and a loyalty program where you earn valuable reward points!</p><a class="zuc-btn zuc-btn-secondary" href="/Zuc/smarterliving" title="Smarter Home Control">Discover more</a>
-      <div class="d-grey-slash"><img class="--image" src="../Images/Zuc/images/graphics/graphic_slash_grey.svg" alt="Decorative grey slashes."></div>
-    </div>
-    <div class="zuc-featured-image flex flex-hor-center">
-      <div class="zuc-featured-media">
-        <!-- <img class="--phone-img" src="/Images/Zuc/images/homepage/connected-phone.png" alt="Image of cell phone with Smarter Living App"> -->
-        <img class="--photo" src="../Images/Zuc/images/homepage/happy-family-laughing-607x511.png" alt="A Family laughing and enjoying on couch.">
-        <!-- Disabled for launch-->
-      </div><img class="zuc-blob" src="../Images/Zuc/images/shapes/round-blob-solid.svg" alt="Decorative gradient image in background">
-    </div>
-  </div>
-</section>
-<section class="zuc-review-section flex flex-column flex-vert-center u-section-spacing" id="zuc-review-module">
-  <div class="zuc-review-container flex flex-column flex-vert-center">
-    <div class="zuc-quote-badge-container flex flex-vert-center flex-hor-center u-soft-shadow"><img src="../Images/Zuc/images/icons/icon-quote.svg" alt="Purple quotation marks."></div>
-    <!-- Quote / Rating Container-->
-    <div class="zuc-quote-container u-soft-shadow" data-review-container>
-      <!-- Individual Quote-->
-      <div class="zuc-quote-transition-wrap flex flex-column flex-vert-center" data-review>
-        <div class="zuc-quote-text u-zuc-darkindigo">
-          <p>ZucoraHome has been a pleasure to deal with. They are very responsive, professional and were diligent about removing the stain from my couch. I highly recommend this company!</p>
-        </div>
-        <div class="zuc-stars-container flex flex-row flex-space-around">
+        <div class="zuc-review-stars flex flex-row flex-space-around">
           <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
           <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
           <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
           <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
-          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
-        </div>
-        <p class="zuc-quote-author u-bold u-zuc-darkindigo">– Heather T.</p>
+          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star"></div>
+        <p class="zuc-review-author u-bold u-zuc-darkindigo u-uppercase">– Jeff R.</p>
       </div>
-      <div class="zuc-quote-transition-wrap flex flex-column flex-vert-center" data-review>
-        <div class="zuc-quote-text u-zuc-darkindigo">
-          <p>The auto cleaning products are fantastic! Love the fact too that there are no harmful chemicals washing away. Ordering was simple, shipping was prompt and the packaging excellent.</p>
-        </div>
-        <div class="zuc-stars-container flex flex-row flex-space-around">
-          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
-          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
-          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
-          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
-        </div>
-        <p class="zuc-quote-author u-bold u-zuc-darkindigo">– James M.</p>
+      <div class="zuc-tri-box --why-box">
+        <h2 class="u-font-serif u-zuc-indigo">Why Zucora Home?</h2>
+        <div class="zuc-why-box-icon-row">
+          <div class="zuc-why-box-icon-item">
+            <div class="zuc-why-box-icon-img"><img src="../Images/Zuc/images/icons/icon-experienced.svg" alt="An icon of a document with a thumbs up"></div>
+            <h6>EXPERIENCED</h6>
+          </div>
+          <div class="zuc-why-box-icon-item">
+            <div class="zuc-why-box-icon-img"><img src="../Images/Zuc/images/icons/icon-nationwide.svg" alt="An icon of a map"></div>
+            <h6>NATIONWIDE</h6>
+          </div>
+          <div class="zuc-why-box-icon-item">
+            <div class="zuc-why-box-icon-img"><img src="../Images/Zuc/images/icons/icon-guaranteed.svg" alt="An icon of a victory badge"></div>
+            <h6>GUARANTEED</h6>
+          </div>
+        </div><a class="zuc-btn zuc-btn-secondary" href="/Zuc/ourstory" alt="About Zucora">Our Story</a>
       </div>
-      <div class="zuc-quote-transition-wrap flex flex-column flex-vert-center" data-review>
-        <div class="zuc-quote-text u-zuc-darkindigo">
-          <p>We contacted them after finding stains in a sofa set. They did a fantastic job. We were quite satisfied by the quality of the work performed by their local partners.</p>
-        </div>
-        <div class="zuc-stars-container flex flex-row flex-space-around"><img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
-          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star"><img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star"><img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
-        </div>
-        <p class="zuc-quote-author u-bold u-zuc-darkindigo">– Veronica P.</p>
-      </div>
-    </div>
-    <!-- Action controls--><a class="zuc-quote-button zuc-right u-soft-shadow flex flex-vert-center flex-hor-center" href="javascript:void(0)" title="Next Review" onclick="traverseReview(1)"><img src="../Images/Zuc/images/icons/icon-arrow.svg" alt="Purple arrow pointing right."></a><a class="zuc-quote-button zuc-left u-soft-shadow flex flex-vert-center flex-hor-center" href="javascript:void(0)" title="Previous Review" onclick="traverseReview(-1)"><img class="u-imgflip-hor" src="../Images/Zuc/images/icons/icon-arrow.svg" alt="Purple arrow pointing left."></a>
-    <div class="zuc-floating-container u-soft-shadow">
-      <h3 class="u-color-white u-font-serif">See what our Members say</h3>
-    </div>
-  </div>
-</section>
-<section class="zuc-home-inspired-section flex">
-  <div class="zuc-featured-content --text">
-    <div class="zuc-title-container flex">
-      <h4>Innovative</h4>
-      <div class="zuc-title-flag">
-        <div class="--red"></div>
-      </div>
-    </div>
-    <h5 class="zuc-home-inspired-section--heading u-font-serif u-zuc-indigo">Smarter Products = Smarter Living</h5><img class="d-green-waves" src="../Images/Zuc/images/graphics/graphic_zigzag_green.svg" alt="Decorative lines">
-  </div>
-  <div class="zuc-home-inspired-section--right flex flex-column flex-hor-center">
-    <div class="zuc-home-inspired-section--icons flex flex-hor-around flex-vert-start zuc-hp-icon">
-      <div class="zuc-hp-icon --hp-inspired-icons"><img class="icon-img" src="../Images/Zuc/images/icons/icon-non-toxic.svg" alt="Toxin free home with a heart shape on the right side.">
-        <p class="u-bold u-uppercase">Non-Toxic</p>
-      </div>
-      <div class="zuc-hp-icon --hp-inspired-icons"><img class="icon-img" src="../Images/Zuc/images/icons/icon-clinically-tested.svg" alt="Notepad with a checkmark circled on the right side">
-        <p class="u-bold u-uppercase">Clinically Tested</p>
-      </div>
-      <div class="zuc-hp-icon --hp-inspired-icons"><img class="icon-img" src="../Images/Zuc/images/icons/icon-animal.svg" alt="Outline of a rabbit representing cruelty-free symbol">
-        <p class="u-bold u-uppercase">Not Tested on Animals</p>
-      </div>
-    </div>
-    <p class="zuc-home-inspired-section--copy u-light">ZucoraHome offers eco-friendly Smarter Home Products. These naturally inspired cleaning, personal care items and bedding essentials will empower your quest for a clean home and healthy family, while having a positive impact on the world around you.</p>
-    <div class="zuc-featured-action"><a class="zuc-btn zuc-btn-secondary" href="/Zuc/smarterhomeproducts" title="See our selection of Smarter Home Products">LEARN MORE</a></div>
-  </div>
-</section>
-<section class="zuc-about-section">
-  <div class="flex flex-vert-stretch flex-wrap">
-    <div class="zuc-about-img-box flex"></div>
-    <div class="zuc-about-text-box flex flex-column u-soft-shadow">
-      <h2 class="u-font-serif u-zuc-indigo">Canada&#146;s Smarter Living Company.</h2>
-      <p class="u-zuc-darkindigo">Since 1979, we've been passionate about serving Canadians with innovative home convenience solutions. By combining our people, professional services and technology, we deliver Smarter Living solutions designed for today’s busy families and tomorrow’s digitally connected homes. Our unique service and replacement programs help remove the stress out of home management by caring for your appliances, furniture, and home systems, while our innovative home and lifestyle products deliver complete comfort and convenience!</p>
-      <div class="zuc-about-icons flex flex-vert-start flex-wrap">
-        <div class="zuc-hp-icon --about-icons"><img class="icon-img" src="../Images/Zuc/images/icons/icon-experienced.svg" alt="A thumbs up given to resume of qualified applicants.">
-          <p class="u-bold u-uppercase --icon-text">Experienced</p>
-        </div>
-        <div class="zuc-hp-icon --about-icons"><img class="icon-img" src="../Images/Zuc/images/icons/icon-nationwide.svg" alt="Map marked with Canada location.">
-          <p class="u-bold u-uppercase --icon-text">Nationwide</p>
-        </div>
-        <div class="zuc-hp-icon --about-icons"><img class="icon-img" src="../Images/Zuc/images/icons/icon-guaranteed.svg" alt="Check-marked seal of guarantee.">
-          <p class="u-bold u-uppercase --icon-text">Guaranteed</p>
-        </div>
-      </div><a class="zuc-btn zuc-btn-secondary" href="/Zuc/ourstory" title="About us page">About Us</a>
-    </div>
-  </div><img class="zuc-pear-blob" src="../Images/Zuc/images/shapes/round-blob-half-solid.svg" alt="A pear shaped abstract blob">
-</section>
-
+    </section>
+    
 <!-- main page content ends -->
     <!-- Site Footer -->
     <footer class="zuc-footer-wrapper">
@@ -419,13 +308,12 @@
         <div class="zuc-footer-row flex">
           <div class="flex flex-column flex-vert-start zuc-footer--column">
             <h4 class="zuc-footer--header u-uppercase">About Us</h4>
-            <a class="zuc-footer--link" href="" title="ZucoraHome Blog">Blog</a>
-            <a class="zuc-footer--link" href="/Zuc/joinzucora" title="Join Us">Careers</a>
             <a class="zuc-footer--link" href="/Zuc/community" title="Community contribution">Community</a>
             <a class="zuc-footer--link" href="/Zuc/formcontactus" title="Contact Us">Contact Us</a>
-            <a class="zuc-footer--link" href="/Zuc/culture" title="ZucoraHome Office Culture">Culture</a>
-            <a class="zuc-footer--link" href="/Zuc/ourstory" title="ZucoraHome news">News</a>
-            
+            <a class="zuc-footer--link" href="/Zuc/joinzucora" title="Join Us">Careers</a>
+            <a class="zuc-footer--link" href="/Zuc/culture" title="ZucoraHome Office Culture">Our Culture</a>
+            <a class="zuc-footer--link" href="/Zuc/ourstory" title="About Us">Our Story</a>
+            <a class="zuc-footer--link" href="/Zuc/ourstory#our-team" title="Our Team">Our Team</a>
           </div>
           <div class="flex flex-column flex-vert-start zuc-footer--column">
             <h4 class="zuc-footer--header u-uppercase">Member Centre</h4>
@@ -468,8 +356,5 @@
     <!-- /Zuc/termsservice /Zuc/privacypolicy-->
   </footer>
     <script type="text/javascript" src="../Content/Zuc/js/build9d66868d59cc90dfcd5c.js"></script>
-    <!-- Hero Slider Controller-->
-    <script src="../Scripts/Zuc/js/review-controller.js"></script>
-    <script src="../Scripts/Zuc/js/hero-slider.js"></script>
 </body>
 </html>

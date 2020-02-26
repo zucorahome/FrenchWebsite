@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Zucora Home: Event page</title>
     <meta content="" name="description">
-   	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="../Content/Zuc/styles/bootstrap.min.css" rel="stylesheet">
     <link href="../Content/Zuc/styles/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="../Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
@@ -15,6 +15,7 @@
     <!-- [ FONTS ]-->
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body style="margin-top: 101px;">
 <!-- Site Navigation-->
@@ -187,38 +188,39 @@
     </div>
   </div>
     <!-- Main page content-->
- <section class="zuc-secondary-header --sl-header" aria-describedby="header-caption" style="background-image: url('../Images/Zuc/images/smarter-living/hero-background.png');">
-      <div class="zuc-secondary-header--graphic-section">
-        <div class="--bottom-wave"><img src="../Images/Zuc/images/shapes/hero-wave-bottom.svg" alt=""></div>
-      </div>
+ <section class="zuc-secondary-header --slb-header" aria-describedby="" style="background-image:url('../Images/Zuc/images/smarter-living/interior-house-header.png');">
       <!-- Hero Content - Wrapper-->
-      <div class="zuc-hero-content">
+      <div class="zuc-slb-content">
         <!-- Top Content-->
-        <div class="zuc-hero-row flex flex-vert-start">
-          <div class="zuc-hero-left">
-            <h1 class="u-font-serif u-zuc-indigo">Qu&#146;est-ce qu&#146;un plan Habitat sensé?</h1>
-            <p class="u-zuc-darkindigo">Un habitat sensé repose sur des choix qui offrent plus de confort et de commodité dans la vie de tous les jours.</p>
-            <p class="u-zuc-darkindigo">Nous éliminons le stress lié à la gestion d&#146;un foyer grâce à des services professionnels et des produits novateurs conçus pour protéger votre budget tout en procurant une tranquillité d&#146;esprit à vous et à votre famille.</p>
-            <p class="u-zuc-darkindigo">Découvrez à quel point il est simple d&#146;adopter un habitat sensé grâce à ZucoraHome.</p><a class="zuc-btn zuc-btn-secondary u-uppercase" href="/Zuc/serviceplans" title="See all of our service plans" id="smarter-video">VOIR LES OPTIONS DE PLAN</a>
+        <div class="zuc-hero-row flex flex-vert-end">
+          <div class="zuc-slb-left u-text-left">
+            <h1 class="u-font-serif u-zuc-indigo">Smarter Living is very rewarding.</h1>
+            <p class="u-zuc-darkindigo">With your Smarter Living Plan, you automatically receive Member benefits that include priority service, preferred pricing, special offers and personalized service.</p>
+            <p class="u-zuc-darkindigo"></p><a class="--member" href="javascript:void(0)" title="Member Login" onclick="toggleModal('[data-modal-login]')">I’m already a Member</a><a class="zuc-btn zuc-btn-secondary u-uppercase" href="/Zuc/ecomplan" title="Get Started Today">Get Started Today</a>
           </div>
-          <div class="zuc-hero-right"><img class="--img-position" src="../Images/Zuc/images/smarter-living/hero-couple.png" alt="Un couple de retraités se fait prendre en photo en souriant dans sa nouvelle maison."></div>
+          <div class="zuc-hero-right"><img class="--zuc-slb-img-position" src="../Images/Zuc/images/smarter-living/girl-blob-cutout-header.png" title="A smiling woman with her arms crossed"></div>
         </div>
-        <!-- Bottom Video-->
-        <div class="zuc-hero-row flex flex-vert-stretch --video-row u-soft-shadow">
-          <div class="zuc-hero-left">
-            <h5 class="u-font-serif u-zuc-indigo">Ayez l&#146;esprit tranquille grâce à Habitat sensé.</h5>
-            <p class="u-ultralight u-zuc-darkindigo"><img class="--wave-position" src="../Images/Zuc/images/graphics/graphic_zigzag_coral.svg">Lorsque vous optez pour un plan Habitat sensé, vous protégez votre budget, le bien-être de votre famille et votre environnement résidentiel.</p>
-          </div>
-          <div class="zuc-hero-right flex flex-vert-stretch flex-hor-center">
-            <div class="zuc-hero-video-player flex flex-wrap flex-vert-center flex-hor-between">
-              <!-- Images--><img src="../Images/Zuc/images/ZucoraHome-brand-white.svg">
-              <!-- Play Button--><img class="--play-icon" src="../Images/Zuc/images/icons/icon-play.svg" onclick="toggleModal('[data-smarter-video]')">
-              <!-- video Title-->
-              <div class="zuc-video-title u-font-serif">Choisissez de protéger votre foyer et votre famille.</div>
+        <!-- Bottom Container-->
+        <div class="zuc-hero-row u-soft-shadow --slb-hero-grid-row">
+          <h2 class="u-zuc-indigo u-font-serif">Exceptional Member benefits.</h2>
+          <div class="zuc-header-tiles flex flex-vert-start flex-hor-between">
+            <!-- Tile ------------------>
+            <!-- - Iterate over each value in the Tiles object-->
+            <div class="zuc-header-tile"><img class="zuc-header-tile-icon" src="../Images/Zuc/images/icons/icon-preferred-pricing.svg" alt="Icon of a price tag with a star on it">
+              <h6 class="u-zuc-indigo u-bold">PREFERRED PRICING</h6>
+              <p class="u-zuc-darkindigo">Receive special Member pricing on Smarter Living Products.</p>
+            </div>
+            <div class="zuc-header-tile"><img class="zuc-header-tile-icon" src="../Images/Zuc/images/icons/icon-premium-pricing.svg" alt="Icon of a piggy bank with coins dropping into it">
+              <h6 class="u-zuc-indigo u-bold">EARN REWARDS</h6>
+              <p class="u-zuc-darkindigo">Earn Member rewards on future purchases.</p>
+            </div>
+            <div class="zuc-header-tile"><img class="zuc-header-tile-icon" src="../Images/Zuc/images/icons/icon-personalized-service.svg" alt="TODO">
+              <h6 class="u-zuc-indigo u-bold">PERSONALIZED PLAN</h6>
+              <p class="u-zuc-darkindigo">Select the plan that is right for you and fits your budget.</p>
             </div>
           </div>
         </div>
-      </div>
+      </div><img class="zuc-hero-bottom-wave" src="../Images/Zuc/images/shapes/hero-wave-bottom.svg" alt="A wave shape">
       <div class="u-screenreader" id="header-caption">BRIEFLY DESCRIBE VIDEO IN MARKETING LANGUAGE - TODO</div>
     </section>
     <!-- Modal Container-->
@@ -227,231 +229,81 @@
       <div class="zuc-modal-content" onclick="event.stopPropagation()">
         <!-- Zucora Home Introductory Video-->
         <video class="zuc-modal-video" poster="https://i.vimeocdn.com/video/739725837.jpg" style="background-image: url('https://i.vimeocdn.com/video/739725837.jpg'); background-size: cover;" preload="auto" controls>
-          <source src="https://player.vimeo.com/external/305566784.hd.mp4?s=a2883c78396a5719db67ac45876282a28d7a623e&profile_id=175" type="video/mp4">
-      <source src="https://player.vimeo.com/external/305566784.hd.mp4?s=a2883c78396a5719db67ac45876282a28d7a623e&profile_id=174" type="video/mp4">
-          <source src="https://player.vimeo.com/external/305566784.sd.mp4?s=42b73d47880ee155bd425044775957f7bc20437b&profile_id=165" type="video/mp4">
+          <source src="https://player.vimeo.com/external/301216708.hd.mp4?s=324fdb4fb3b75d1fb3f6edd16a3068675a7b6cf7&amp;profile_id=175" type="video/mp4">
+          <source src="https://player.vimeo.com/external/301216708.hd.mp4?s=324fdb4fb3b75d1fb3f6edd16a3068675a7b6cf7&amp;profile_id=174" type="video/mp4">
+          <source src="https://player.vimeo.com/external/301216708.hd.mp4?s=324fdb4fb3b75d1fb3f6edd16a3068675a7b6cf7&amp;profile_id=165" type="video/mp4">
         </video>
       </div>
     </div>
-    <section class="zuc-sixgrid-container --slp-6grid">
-      <h2 class="u-font-serif u-zuc-indigo">Pourquoi choisir un plan Habitat sensé de ZucoraHome?</h2>
-      <div class="zuc-sixgrid-items flex-hor-between">
-        <div class="zuc-sixgrid-item">
-          <div class="zuc-sixgrid-img-container"><img src="../Images/Zuc/images/icons/icon-24-7-service.svg" alt="Icon of a turning clock with the text 24/7"></div>
-          <h6>SERVICE À LA CLIENTÈLE MULTILINGUE 24/7</h6>
-          <p>Posez des questions ou prenez des dispositions pour le service au moment qui vous est opportun.</p>
-        </div>
-        <div class="zuc-sixgrid-item">
-          <div class="zuc-sixgrid-img-container"><img src="../Images/Zuc/images/icons/icon-tech-network.svg" alt="Icon of two workers shown from the shoulder up"></div>
-          <h6>RÉSEAU DE TECHNICIENS À L'ÉCHELLE NATIONALE</h6>
-          <p>Recevez les services de techniciens en réparation professionnels présélectionnés et compétents.</p>
-        </div>
-        <div class="zuc-sixgrid-item">
-          <div class="zuc-sixgrid-img-container"><img src="../Images/Zuc/images/icons/icon-personalized-service.svg" alt="Icon of a sparklingly clean couch"></div>
-          <h6>PLAN PERSONNALISÉ</h6>
-          <p>Sélectionnez le bon plan pour vous en fonction de votre budget.</p>
-        </div>
-        <div class="zuc-sixgrid-item">
-          <div class="zuc-sixgrid-img-container"><img src="../Images/Zuc/images/icons/icon-fast-service.svg" alt="Icon of a clock moving quickly shown with speed lines"></div>
-          <h6>SERVICE RAPIDE</h6>
-          <p>Votre plan Habitat sensé vous donne droit à un service prioritaire.</p>
-        </div>
-        <div class="zuc-sixgrid-item">
-          <div class="zuc-sixgrid-img-container"><img src="../Images/Zuc/images/icons/icon-preferred-pricing.svg" alt="Icon of a price tag with a star on it"></div>
-          <h6>TARIFS PRÉFÉRENTIELS</h6>
-          <p>Obtenez des tarifs réservés aux membres sur les produits Habitat sensé.</p>
-        </div>
-        <div class="zuc-sixgrid-item">
-          <div class="zuc-sixgrid-img-container"><img src="../Images/Zuc/images/icons/icon-premium-pricing.svg" alt="Icon of a piggy bank with coins dropping into it"></div>
-          <h6>ACCUMULEZ DES RÉCOMPENSES</h6>
-          <p>Accumulez des récompenses sur vos prochains achats comme membre.</p>
-        </div>
+    <section class="zuc-slb-benefits flex">
+      <div class="zuc-image-box"></div>
+      <div class="zuc-cta-box u-soft-shadow">
+        <h3 class="u-color-pure-white u-font-serif">Earn rewards while protecting your home.</h3>
+        <p class="u-color-white">As a Smarter Living Member, you receive reward points with every plan, product and service purchase.</p><a class="zuc-btn zuc-btn-hollow u-soft-shadow" href="/Zuc/smarterliving#how-it-works" title="How it works">HOW IT WORKS</a><img class="zuc-coral-wave" src="../Images/Zuc/images/graphics/graphic_zigzag_coral.svg" alt="Decorative coral wave">
       </div>
+      <div class="zuc-info-box u-soft-shadow">
+        <h4 class="u-text-uppercase u-zuc-darkindigo u-bold">YOUR MEMBER BENEFITS INCLUDE:</h4>
+        <ul class="--list-margin u-light">
+          <li>24/7 Service Request submissions</li>
+          <li>National network of professional contractors</li>
+          <li>Customized plan to fit your budget</li>
+          <li>Fast response when you need it most</li>
+          <li>Special Member pricing on Smarter Home Products</li>
+          <li>Valuable rewards for future purchases</li>
+        </ul>
+      </div><img class="zuc-slb-benefits-bg" src="../Images/Zuc/images/shapes/blob-cutoff.svg" alt="An abstract green and blue blob shape">
     </section>
-    <section class="zuc-featured-block --graphic-blob --center-blob" id="how-it-works">
+    <section class="zuc-featured-block --graphic-blob">
       <div class="zuc-featured flex flex-wrap">
-        <div class="zuc-featured-content --list">
-          <h2 class="u-font-serif u-zuc-indigo">Comment ça fonctionne?</h2>
-          <div class="zuc-featured-how-step"><span>ÉTAPE 1</span></div>
-          <h4 class="u-zuc-darkindigo u-bold">SÉLECTIONNEZ VOTRE PLAN</h4>
-          <p class="u-zuc-darkindigo">Trouvez le bon plan selon votre budget et votre mode de vie parmi les différentes options que nous vous proposons. Sélectionnez un plan électroménagers, mobilier ou systèmes résidentiels. Économisez en regroupant plusieurs plans ou optez pour le plan habitation intégral afin d&#146;obtenir une protection totale.</p>
-          <div class="d-zucbar --zb-lilac"></div>
-          <div class="zuc-featured-how-step"><span>ÉTAPE 2</span></div>
-          <h4 class="u-zuc-darkindigo u-bold">DEMANDEZ UN SERVICE</h4>
-          <p class="u-zuc-darkindigo">Si un objet couvert par le plan a besoin d&#146;une réparation ou d&#146;un remplacement, nous sommes là pour vous aider. Communiquez avec nous par téléphone ou en ligne 24 h/24, 7 j/7. Si la présence d&#146;un technicien d&#146;entretien est requise, vous paierez des frais minimes de service d&#146;un corps de métier et nous nous occuperons de vous offrir un service prioritaire sans coûts supplémentaires.</p>
-          <div class="d-zucbar --zb-lilac"></div>
-          <div class="zuc-featured-how-step"><span>ÉTAPE 3</span></div>
-          <h4 class="u-zuc-darkindigo u-bold">PROBLÈME RÉSOLU</h4>
-          <p class="u-zuc-darkindigo">Nous vous accompagnerons dans toutes les étapes jusqu&#146;à la conclusion de votre demande de service. Un entrepreneur professionnel de votre région posera un diagnostic du problème et offrira une solution. Nous paierons les pièces, la main-d&#146;œuvre ou le remplacement de l&#146;objet couvert. Et vous protégez votre budget.</p>
-          <div class="d-zucbar --zb-lilac"></div>
-      <div class="zuc-btn-box"><a class="zuc-btn zuc-btn-secondary u-soft-shadow" href="https://zuchomelimetacstorage.blob.core.windows.net/docs/SLP%20TandC.pdf_0d1ac773-47b0-49fc-8651-0324ee39b048.pdf" title="SEE TERMS AND CONDITIONS" target="_blank">VOIR LES MODALITÉS ET LES CONDITIONS</a></div>
-        </div>
-        <div class="zuc-featured-image flex flex-hor-center">
-          <div class="zuc-featured-media"><img src="../Images/Zuc/images/shared/couple-on-computer.png" alt="Un jeune couple regarde les plans Habitat sensé sur son ordinateur portable en étant confortablement assis sur le tapis de son nouveau salon beige."></div><img class="zuc-blob --slb-blob" src="../Images/Zuc/images/shapes/round-blob-solid.svg" alt="Une forme en S abstraite horizontale dans un dégradé de vert et de violet.">
-        </div>
-      </div>
-    </section>
-    <section class="zuc-service-plans-box flex flex-wrap flex-hor-center"><img class="zuc-bg-blob" src="../Images/Zuc/images/shapes/round-blob-half-solid.svg" alt="A pear shaped abstract blob">
-      <div class="zuc-service-box --title u-soft-shadow flex-column flex-vert-start">
-        <div class="zuc-title-container flex flex-vert-start">
-          <h4>PLANS DE SERVICE</h4><img class="zuc-green-bar" src="../Images/Zuc/images/graphics/graphic_line_green_large.svg" alt="A horizontal mint coloured line">
-        </div>
-        <h2 class="u-font-serif u-zuc-indigo">Sélectionnez votre plan.</h2>
-        <p class="u-zuc-darkindigo">Choisissez un plan individuel pour vos électroménagers, votre mobilier ou vos systèmes résidentiels qui convient à votre budget. Économisez en combinant deux plans ou optimisez vos économies en sélectionnant le plan habitation intégral.</p>
-      </div>
-    
-      <a class="zuc-service-box --bundle flex-vert-center --overlay --o-indigo --o-static" href="javascript:void(0)" onclick="toggleModal('[data-modal-whole-home-bundle]')">
-        <div class="zuc-box-link"></div>
-        <h5 class="u-font-serif u-text-shadow u-color-white">Plan habitation intégral</h5>
-        <img class="zuc-block-badge" src="../Images/Zuc/images/icons/ZH_Icon_White.svg" alt="La couverture du plan habitation intégral de ZucoraHome protège les foyers modernes des problèmes imprévus.">
-      </a>
-    <a class="zuc-service-box --triple --appl flex-vert-end --overlay --o-darkindigo --o-static" href="/Zuc/serviceplansappliance">
-        <div class="zuc-box-link"></div>
-        <h3 class="u-font-serif u-text-shadow u-color-white">Plan électroménagers</h3>
-      </a>
-      <a class="zuc-service-box --triple --furn flex-vert-end --overlay --o-darkindigo --o-static" href="/Zuc/serviceplansfurniture">
-        <div class="zuc-box-link"></div>
-        <h3 class="u-font-serif u-text-shadow u-color-white">Plan mobilier</h3>
-      </a>
-      <a class="zuc-service-box --triple --homesys flex-vert-end --overlay --o-darkindigo --o-static" href="/Zuc/serviceplanshomesystems">
-        <div class="zuc-box-link"></div>
-        <h3 class="u-font-serif u-text-shadow u-color-white">Plan systèmes résidentiels</h3>
-      </a>
-      <a class="zuc-service-box --combo flex-vert-center --overlay --o-lilac --o-static" href="javascript:void(0)" onclick="toggleModal('[data-modal-combo-plan]')">
-        <div class="zuc-box-link"></div>
-        <h5 class="u-font-serif u-text-shadow u-color-white">Plan groupé</h5>
-      </a>
-    </section>
-    <section class="zuc-featured-block --flipped-image">
-      <div class="zuc-featured flex flex-wrap flex-hor-center">
         <div class="zuc-featured-content">
           <div class="zuc-title-container flex">
-            <h4>AVANTAGES POUR LES MEMBRES</h4>
+            <h4>Valuable rewards</h4>
             <div class="zuc-title-flag">
               <div class="--green"></div>
             </div>
           </div>
-          <h2 class="u-font-serif u-zuc-indigo">Être membre Habitat sensé.</h2>
-          <p>En tant que membre Habitat sensé, vous avez automatiquement accès à nombre d&#146;avantages et de récompenses.</p><a class="zuc-btn zuc-btn-secondary" href="/Zuc/smarterlivingmembershipbenefits" title="Learn more about Furniture Care Kits">DÉCOUVREZ LES AVANTAGES</a>
+          <h2 class="u-font-serif u-zuc-indigo">Earn 10 points for every $1.</h2>
+          <p>Earn valuable Smarter Living Rewards with your plan, product and service purchases. By earning 10 points for every $1 spent, means your points will accumulate quickly and become valuable for future product purchases.</p><br><br><br>
+          <div class="d-grey-slash"><img class="--image" src="../Images/Zuc/images/graphics/graphic_slash_grey.svg" alt="Decorative grey slashes."></div>
         </div>
-        <div class="zuc-featured-image flex flex-hor-center --gif-size">
-          <div class="zuc-featured-media"><img src="../Images/Zuc/images/anim/SmartLiving_Icons.gif" alt="Rotating icons"></div>
+        <div class="zuc-featured-image flex flex-hor-center">
+          <div class="zuc-featured-media"><img src="../Images/Zuc/images/shared/woman-online-purchase.png"></div><img class="zuc-blob" src="../Images/Zuc/images/shapes/round-blob-solid.svg" alt="An abstract green and blue blob shape">
         </div>
       </div>
     </section>
-    <!-- Modal Container - Whole Home Bundles-->
-    <div class="zuc-modal --modal-scroll" data-modal-whole-home-bundle onclick="toggleModal('[data-modal-whole-home-bundle]')">
-      <!-- Modal Content-->
-      <div class="zuc-bundle-modal-content --sp-bundle" onclick="event.stopPropagation()">
-        <!-- Place Modal Content Here-->
-        <div class="zuc-sp-bundle-content"><img class="zuc-modal-close-btn" src="../Images/Zuc/images/icons/icon-page-close.svg" data-modal-whole-home-bundle onclick="toggleModal('[data-modal-whole-home-bundle]')">
-          <div class="zuc-bundles--titles">
-            <div class="zuc-bundles--preheading u-uppercase u-bold u-zuc-indigo">Best Value</div>
-            <h2 class="u-font-serif u-zuc-indigo">Whole Home Bundle</h2>
-            <div class="zuc-bundle--subheading u-font-serif u-light">Combine all 3 plans to save $50/month.</div>
-            <p>Coverage includes repair, parts, and replacement for the items within your plans. The low monthly subscription fee gives you the coverage you want immediately without big, upfront costs.</p>
-            <div class="zuc-sp-bundle--price"><span class="sign">$</span><span class="dollar">69</span><span class="cents">.99</span><span class="month">/month</span></div>
-            <div class="zuc-sp-bundle--btn flex flex-vert-baseline"><a class="zuc-btn zuc-btn-secondary" href="/Zuc/ecomplan?i=Whole%20Home%20Plan" title="Get Started Today">Get started today</a></div>
-          </div>
-          <div class="zuc-custom-plan--items --modal">
-            <div class="zuc-custom-plan--box flex"><img class="modal-photo" src="../Images/Zuc/images/service-plans/home-furnishing.png" alt="Home Furnishings">
-              <div class="zuc-sp-bundle--list">
-                <h3 class="zuc-sp-bundle--pro-header u-font-serif u-light u-text-center u-zuc-indigo">Furniture Coverage:</h3>
-                <ul class="u-light">
-                    <li>Occasional / Side Chair</li>
-          <li>Loveseat / Oversized Chair</li>
-          <li>Sofa / Sectional</li>
-          <li>Mechanical Reclining Chair</li>
-          <li>Electrical motion Chair or Sofa</li>
-          <li>Ottoman / Futon</li>
-          <li>Occasional Tables</li>
-          <li>Dining Chairs, tables, benches</li>
-          <li>Mattress or Foundation</li>
-          <li>Bedroom Furniture (headboards, footboards</li>
-                </ul>
-              </div>
-      
-            </div><img class="zuc-sp-bundle--plan-icon" src="../Images/Zuc/images/icons/icon-plus.svg" alt="A circle with a plus in it">
-            <div class="zuc-custom-plan--box flex"><img class="modal-photo" src="../Images/Zuc/images/service-plans/appliances.png" alt="Home Appliances">
-                <div class="zuc-sp-bundle--list">
-                <h3 class="zuc-sp-bundle--pro-header u-font-serif u-light u-text-center u-zuc-indigo">Appliances Coverage:</h3>
-                <ul class="u-light">
-                  <li>Refrigerator including built-in ice and water dispenser</li>
-                  <li>Range / Oven / Cooktop</li>
-                  <li>Dishwasher</li>
-                  <li>Clothes Washer</li>
-                  <li>Clothes Dryer</li>
-                  <li>Freezer</li>
-                  <li>Ice-maker (free standing)</li>
-                  <li>Microwave oven (built-in)</li>
-                  <li>Trash compactor</li>
-                </ul>
-              </div>
-            </div><img class="zuc-sp-bundle--plan-icon" src="../Images/Zuc/images/icons/icon-plus.svg" alt="A circle with a plus in it">
-            <div class="zuc-custom-plan--box flex"><img class="modal-photo" src="../Images/Zuc/images/service-plans/home-systems.png" alt="Home Systems">
-              <div class="zuc-sp-bundle--list">
-                <h3 class="zuc-sp-bundle--pro-header u-font-serif u-light u-text-center u-zuc-indigo">Home Systems Coverage:</h3>
-                <ul class="u-light">
-                  <li>Air conditioning with ductwork</li>
-        <li>Heating/furnace with ductwork</li>
-        <li>Electrical</li>
-        <li>Doorbells</li>
-        <li>Wired smoke detectors</li>
-        <li>Ceiling and exhaust fans</li>
-        <li>Plumbing including stoppages</li>
-        <li>Water heaters</li>
-        <li>Garbage disposals</li>
-        <li>Instant hot/cold dispensers</li>
-        <li>Central vacuums</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
+    <section class="zuc-tri-module flex flex-wrap flex-hor-center"><img class="zuc-tri-module-wave" src="../Images/Zuc/images/shapes/wave-shape-bottom-flat.svg" alt="An abstract conrete colored wave shape">
+      <div class="zuc-tri-box --review-box">
+        <div class="zuc-quote-badge flex flex-vert-center flex-hor-center u-soft-shadow"><img src="../Images/Zuc/images/icons/icon-quote.svg"></div>
+        <h2 class="u-font-serif u-zuc-indigo u-text-center">See what our Members say</h2>
+        <div class="zuc-review-text u-zuc-darkindigo">
+          <p>The service technician called to let me know he was running ahead of schedule and asked if he could come an hour earlier. Yes, that was great and I was thrilled. When he arrived he asked about the stain on the kitchen chair, what I had done to remove it, and took a photo. It took him less than 10 minutes and he was great - he even asked if he could use our water and electrical outlet. When the job was complete he let me know how I could avoid such stains in the future. It is a pleasure to deal with true professionals.</p>
         </div>
+        <div class="zuc-review-stars flex flex-row flex-space-around">
+          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
+          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
+          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
+          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star">
+          <img class="zuc-star" src="../Images/Zuc/images/icons/icon-star.svg" alt="A small purple star"></div>
+        <p class="zuc-review-author u-bold u-zuc-darkindigo u-uppercase">– Jeff R.</p>
       </div>
-    </div>
-  
-  <!-- Modal Container - Combo Plan-->
-    <div class="zuc-modal --modal-scroll" data-modal-combo-plan onclick="toggleModal('[data-modal-combo-plan]')">
-      <!-- Modal Content-->
-      <div class="zuc-bundle-modal-content --sp-bundle" onclick="event.stopPropagation()">
-        <!-- Place Modal Content Here-->
-        <div class="zuc-sp-bundle-content"><img class="zuc-modal-close-btn" src="../Images/Zuc/images/icons/icon-page-close.svg" data-modal-whole-home-bundle onclick="toggleModal('[data-modal-combo-plan]')">
-          <div class="zuc-bundles--titles">
-            <div class="zuc-bundles--preheading u-uppercase u-bold u-zuc-indigo">Most Popular</div>
-            <h2 class="u-font-serif u-zuc-indigo">Combo Plan</h2>
-            <div class="zuc-bundle--subheading u-font-serif u-light">Combine any two plans and save.</div>
-            <p>Coverage includes repair, parts, and replacement for the items within your plans. The low monthly subscription fee gives you the coverage you want immediately without big, upfront costs.</p>
-            <div class="zuc-sp-bundle--price"><span class="sign">$</span><span class="dollar">59</span><span class="cents">.99</span><span class="month">/month</span></div>
-            <!--<div class="zuc-sp-bundle--btn flex flex-vert-baseline"></div> -->
+      <div class="zuc-tri-box --why-box">
+        <h2 class="u-font-serif u-zuc-indigo">Why Zucora Home?</h2>
+        <div class="zuc-why-box-icon-row">
+          <div class="zuc-why-box-icon-item">
+            <div class="zuc-why-box-icon-img"><img src="../Images/Zuc/images/icons/icon-experienced.svg" alt="An icon of a document with a thumbs up"></div>
+            <h6>EXPERIENCED</h6>
           </div>
-          <div class="zuc-custom-plan--items --modal">
-            <div class="zuc-custom-plan--box flex"><img class="modal-photo" src="../Images/Zuc/images/service-plans/furniture-appliances.png" alt="Loveseat and fridge">
-              <div class="zuc-sp-bundle--list">
-                <h3 class="zuc-sp-bundle--pro-header u-font-serif u-light u-text-center u-zuc-indigo">Furniture and Appliances Combo</h3>
-                <a class="zuc-btn zuc-btn-secondary" href="/Zuc/ecomplan?i=Furniture%20And%20Appliances%20Combo%20Plan" title="Get Started Today">Get started today</a>
-              </div>
-            </div><img class="zuc-sp-bundle--plan-icon" src="../Images/Zuc/images/icons/icon-or.svg" alt="A circle with the word 'or' in it">
-            <div class="zuc-custom-plan--box flex"><img class="modal-photo" src="../Images/Zuc/images/service-plans/furniture-home-systems.png" alt="Loveseat and Air-conditioner">
-              <div class="zuc-sp-bundle--list">
-                <h3 class="zuc-sp-bundle--pro-header u-font-serif u-light u-text-center u-zuc-indigo">Furniture and Home Systems</h3>
-                <a class="zuc-btn zuc-btn-secondary" href="/Zuc/ecomplan?i=Furniture%20And%20Home%20Systems%20Combo%20Plan" title="Get Started Today">Get started today</a>
-              </div>
-        
-        
-            </div><img class="zuc-sp-bundle--plan-icon" src="../Images/Zuc/images/icons/icon-or.svg" alt="A circle with the word 'or' in it">
-            <div class="zuc-custom-plan--box flex"><img class="modal-photo" src="../Images/Zuc/images/service-plans/home-systems-appliances.png" alt="Air-conditioner and Fridge">
-              <div class="zuc-sp-bundle--list">
-                <h3 class="zuc-sp-bundle--pro-header u-font-serif u-light u-text-center u-zuc-indigo">Appliances and Home Systems</h3>
-                <a class="zuc-btn zuc-btn-secondary" href="/Zuc/ecomplan?i=Appliances%20And%Home%20Systems%20Combo%20Plan" title="Get Started Today">Get started today</a>
-              </div>
-            </div>
+          <div class="zuc-why-box-icon-item">
+            <div class="zuc-why-box-icon-img"><img src="../Images/Zuc/images/icons/icon-nationwide.svg" alt="An icon of a map"></div>
+            <h6>NATIONWIDE</h6>
           </div>
-          
-        </div>
+          <div class="zuc-why-box-icon-item">
+            <div class="zuc-why-box-icon-img"><img src="../Images/Zuc/images/icons/icon-guaranteed.svg" alt="An icon of a victory badge"></div>
+            <h6>GUARANTEED</h6>
+          </div>
+        </div><a class="zuc-btn zuc-btn-secondary" href="/Zuc/ourstory" alt="About Zucora">Our Story</a>
       </div>
-    </div>
+    </section>
     
 <!-- main page content ends -->
     <!-- Site Footer -->
@@ -527,6 +379,6 @@
     </div>
     <!-- /Zuc/termsservice /Zuc/privacypolicy-->
   </footer>
-    <script type="text/javascript" src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js"></script>
+    <script type="text/javascript" src="../Content/Zuc/js/build9d66868d59cc90dfcd5c.js"></script>
 </body>
 </html>

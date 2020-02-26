@@ -428,7 +428,7 @@ h3 {
 @media only screen and (min-width:641px) {
     .h3,
     h3 {
-        font-size: 40px
+        font-size: 34px
     }
 }
 
@@ -460,7 +460,7 @@ h5 {
 @media only screen and (min-width:641px) {
     .h5,
     h5 {
-        font-size: 80px
+        font-size: 70px
     }
 }
 
@@ -5244,7 +5244,7 @@ section.zuc-billboard {
 
 .zuc-slb-benefits .zuc-image-box {
     background: #36384b;
-    background-image: url(/Images/Zuc/images/shared/dining-room-set.png);
+    background-image: url(../../../Images/Zuc/images/shared/dining-room-set.png);
     background-size: cover;
     background-position: 50%;
     width: 100%;
