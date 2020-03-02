@@ -1386,7 +1386,7 @@ a:hover {
 }
 
 .d-bkg-wave.\--grey-bkg:after {
-    background-image: url(/Images/Zuc/images/shapes/wave-top.svg)
+    background-image: url(../../..../../../Images/Zuc/images/shapes/wave-top.svg)
 }
 
 .d-bkg-wave.\--transparent-bkg {
@@ -1394,11 +1394,11 @@ a:hover {
 }
 
 .d-bkg-wave.\--transparent-bkg:after {
-    background-image: url(../../../Images/Zuc/images/shapes/hero-wave-shape.svg)
+    background-image: url(../../..../../../Images/Zuc/images/shapes/hero-wave-shape.svg)
 }
 
 .d-bkg-wave.\--grey-wave:after {
-    background-image: url(/Images/Zuc/images/shapes/wave-top-grey.svg)
+    background-image: url(../../../Images/Zuc/images/shapes/wave-top-grey.svg)
 }
 
 .a-blur-in {
@@ -4341,52 +4341,52 @@ section.zuc-pane-links {
 }
 
 .zuc-pane.\--baby {
-    background-image: url(/Images/Zuc/images/shared/baby-bath.png)
+    background-image: url(../../..../../../Images/Zuc/images/shared/baby-bath.png)
 }
 
 .zuc-pane.\--interior {
-    background-image: url(/Images/Zuc/images/shared/interior-house.png)
+    background-image: url(../../..../../../Images/Zuc/images/shared/interior-house.png)
 }
 
 .zuc-pane.\--house {
-    background-image: url(/Images/Zuc/images/smarter-living/streetview-house.png)
+    background-image: url(../../..../../../Images/Zuc/images/smarter-living/streetview-house.png)
 }
 
 .zuc-pane.\--kitchen {
-    background-image: url(/Images/Zuc/images/smarter-home/interior-kitchen-header.png)
+    background-image: url(../../..../../../Images/Zuc/images/smarter-home/interior-kitchen-header.png)
 }
 
 .zuc-pane.\--sleepy {
-    background-image: url(/Images/Zuc/images/shared/woman-sleeper-stretching.png);
+    background-image: url(../../../Images/Zuc/images/shared/woman-sleeper-stretching.png);
     background-position: 90% 0
 }
 
 .zuc-pane.\--smartphone {
-    background-image: url(/Images/Zuc/images/shared/happy-family-laughing-746x536.png);
+    background-image: url(../../../Images/Zuc/images/shared/happy-family-laughing-746x536.png);
     background-position: 10% 0
 }
 
 .zuc-pane.\--dishes {
-    background-image: url(/Images/Zuc/images/shared/girl-doing-dishes.png)
+    background-image: url(../../../Images/Zuc/images/shared/girl-doing-dishes.png)
 }
 
 .zuc-pane.\--toolman {
-    background-image: url(/Images/Zuc/images/shared/man-tool-bag.png);
+    background-image: url(../../../Images/Zuc/images/shared/man-tool-bag.png);
     background-position: 93% 0
 }
 
 .zuc-pane.\--happy {
-    background-image: url(/Images/Zuc/images/shared/happy-family-livingroom.png);
+    background-image: url(../../../Images/Zuc/images/shared/happy-family-livingroom.png);
     background-position: 40% 0
 }
 
 .zuc-pane.\--laundry {
-    background-image: url(/Images/Zuc/images/shared/women-laundry-machine.png);
+    background-image: url(../../../Images/Zuc/images/shared/women-laundry-machine.png);
     background-position: 40% 0
 }
 
 .zuc-pane.\--momboy {
-    background-image: url(/Images/Zuc/images/shared/mom-boy-kitchen.png);
+    background-image: url(../../../Images/Zuc/images/shared/mom-boy-kitchen.png);
     background-position: 98% 0
 }
 
@@ -4627,7 +4627,7 @@ section.zuc-tri-module .zuc-tri-module-wave {
     right: 0;
     width: auto;
     height: auto;
-    background-image: url(/Images/Zuc/images/shapes/wave-shape-bottom-flat.svg);
+    background-image: url(../../../Images/Zuc/images/shapes/wave-shape-bottom-flat.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -99
@@ -4890,7 +4890,7 @@ section.zuc-tri-module .zuc-tri-module-wave {
 }
 
 .zuc-blog-item .zuc-blog-item-left {
-    background: url(/Images/Zuc/images/shared/air-conditioning-repair.png);
+    background: url(../../../Images/Zuc/images/shared/air-conditioning-repair.png);
     background-position: 50%;
     background-size: cover;
     width: 32.5vw;
@@ -5904,31 +5904,31 @@ section.zuc-billboard {
 }
 
 .zuc-grid-row .zuc-grid-item.\--aircon {
-    background-image: url(/Images/Zuc/images/shared/air-conditioning-repair.png)
+    background-image: url(../../../Images/Zuc/images/shared/air-conditioning-repair.png)
 }
 
 .zuc-grid-row .zuc-grid-item.\--dining {
-    background-image: url(/Images/Zuc/images/shared/dining-room-set.png)
+    background-image: url(../../../Images/Zuc/images/shared/dining-room-set.png)
 }
 
 .zuc-grid-row .zuc-grid-item.\--heater {
-    background-image: url(/Images/Zuc/images/shared/water-heater-repair.png)
+    background-image: url(../../../Images/Zuc/images/shared/water-heater-repair.png)
 }
 
 .zuc-grid-row .zuc-grid-item.\--fridge {
-    background-image: url(/Images/Zuc/images/shared/refridgerator-repair.png)
+    background-image: url(../../../Images/Zuc/images/shared/refridgerator-repair.png)
 }
 
 .zuc-grid-row .zuc-grid-item.\--leather {
-    background-image: url(/Images/Zuc/images/shared/leather-repair.png)
+    background-image: url(../../../Images/Zuc/images/shared/leather-repair.png)
 }
 
 .zuc-grid-row .zuc-grid-item.\--bigchair {
-    background-image: url(/Images/Zuc/images/shared/oversized-chair.png)
+    background-image: url(../../../Images/Zuc/images/shared/oversized-chair.png)
 }
 
 .zuc-grid-row .zuc-grid-item.\--laundry {
-    background-image: url(/Images/Zuc/images/shared/washing-machine-repair.png)
+    background-image: url(../../../Images/Zuc/images/shared/washing-machine-repair.png)
 }
 
 .zuc-grid-row .\--testimonial {
@@ -6723,7 +6723,7 @@ section.zuc-billboard {
 }
 
 .zuc-spkids-header-bg1 {
-    background-image: url(/Images/Zuc/images/shapes/header-blob.svg);
+    background-image: url(../../../Images/Zuc/images/shapes/header-blob.svg);
     background-repeat: no-repeat;
     width: 100%;
     z-index: 2;
@@ -6986,7 +6986,7 @@ section.zuc-billboard {
     width: 100%;
     position: relative;
     height: 100%;
-    background-image: url(/Images/Zuc/images/shared/man-tool-bag.png);
+    background-image: url(../../../Images/Zuc/images/shared/man-tool-bag.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 0
@@ -7970,7 +7970,7 @@ section.zuc-compare .zuc-compare-title {
 }
 
 .\--layer-zero {
-    background-image: url(/Images/Zuc/images/smarter-home/interior-kitchen-header.png);
+    background-image: url(../../../Images/Zuc/images/smarter-home/interior-kitchen-header.png);
     z-index: -2;
     background-size: cover;
     padding-top: 50%;
@@ -8008,7 +8008,7 @@ section.zuc-compare .zuc-compare-title {
 }
 
 .\--layer-one {
-    background-image: url(/Images/Zuc/images/smarter-home/header-blob.svg);
+    background-image: url(../../../Images/Zuc/images/smarter-home/header-blob.svg);
     z-index: -1;
     top: 5%;
     padding-top: 54%;
@@ -8528,7 +8528,7 @@ section.zuc-connected .zuc-bg-blog {
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/Images/Zuc/images/smarter-products/hero-background.png)
+    background-image: url(../../../Images/Zuc/images/smarter-products/hero-background.png)
 }
 
 @media only screen and (min-width:641px) and (max-width:1024px) {
@@ -8710,7 +8710,7 @@ section.zuc-connected .zuc-bg-blog {
 }
 
 .zuc-spr-hero-container.\--zu {
-    background-image: url(/Images/Zuc/images/smarter-products/hero-family-kitchen.png)
+    background-image: url(../../../Images/Zuc/images/smarter-products/hero-family-kitchen.png)
 }
 
 @media only screen and (max-width:640px) {
@@ -8736,11 +8736,11 @@ section.zuc-connected .zuc-bg-blog {
 }
 
 .zuc-spr-hero-container.\--hk {
-    background-image: url(/Images/Zuc/images/shared/happy-family-livingroom.png)
+    background-image: url(../../../Images/Zuc/images/shared/happy-family-livingroom.png)
 }
 
 .zuc-spr-hero-container.\--pc {
-    background-image: url(/Images/Zuc/images/smarter-products-child/comfort-hero.png)
+    background-image: url(../../../Images/Zuc/images/smarter-products-child/comfort-hero.png)
 }
 
 .zuc-spr-hero-wave {
@@ -8768,7 +8768,7 @@ section.zuc-connected .zuc-bg-blog {
 }
 
 .zuc-spr-hero-wave.\--grey-wave {
-    background-image: url(/Images/Zuc/images/shapes/wave-top-grey.svg)
+    background-image: url(../../../Images/Zuc/images/shapes/wave-top-grey.svg)
 }
 
 .\--pc-hero-bkg-mesh {
@@ -9100,7 +9100,7 @@ section.zuc-dual-video .zuc-video-block video {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(/Images/Zuc/images/shapes/wave-bottom.svg);
+    background-image: url(../../../Images/Zuc/images/shapes/wave-bottom.svg);
     background-size: 100%;
     top: -3px;
     background-repeat: no-repeat;
@@ -9127,7 +9127,7 @@ section.zuc-dual-video .zuc-video-block video {
     width: 33%;
     left: 16%;
     position: relative;
-    background: url(/Images/Zuc/images/smarter-products/white-mol-mesh-bottom-right.png) rgba(67, 77, 160, .7);
+    background: url(../../../Images/Zuc/images/smarter-products/white-mol-mesh-bottom-right.png) rgba(67, 77, 160, .7);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     padding: 14.4vw 2vw 4vw
@@ -9185,12 +9185,12 @@ section.zuc-dual-video .zuc-video-block video {
 }
 
 .zuc-wave-hero-top.\--grey-top:after {
-    background-image: url(/Images/Zuc/images/shapes/wave-bottom-grey.svg)
+    background-image: url(../../../Images/Zuc/images/shapes/wave-bottom-grey.svg)
 }
 
 .\--zu-wave-content {
     padding-top: 10px;
-    background-image: url(/Images/Zuc/images/smarter-products/boy-laying-withdog.png)
+    background-image: url(../../../Images/Zuc/images/smarter-products/boy-laying-withdog.png)
 }
 
 @media only screen and (min-width:641px) and (max-width:1024px) {
@@ -9277,7 +9277,7 @@ section.zuc-protectors {
 
 .zuc-protectors-graphics {
     width: 100%;
-    background-image: url(/Images/Zuc/images/shapes/comfort-blob.svg);
+    background-image: url(../../../Images/Zuc/images/shapes/comfort-blob.svg);
     overflow: hidden;
     position: absolute;
     padding-top: 60%;
@@ -9996,7 +9996,7 @@ section.zuc-teamgrid .teamgrid-subtitle {
 }
 
 section.zuc-teamgrid .zuc-bg-wave {
-    background-image: url(/Images/Zuc/images/shapes/wave-top.svg);
+    background-image: url(../../../Images/Zuc/images/shapes/wave-top.svg);
     z-index: -5;
     position: absolute;
     bottom: 0;
@@ -10830,7 +10830,7 @@ section.zuc-about-join {
 }
 
 .\--three-panels .zuc-panel.\--toolman {
-    background-image: url(/Images/Zuc/images/shared/man-tool-bag.png)
+    background-image: url(../../../Images/Zuc/images/shared/man-tool-bag.png)
 }
 
 .\--three-panels .zuc-panel.\--toolman span {
@@ -10838,7 +10838,7 @@ section.zuc-about-join {
 }
 
 .\--three-panels .zuc-panel.\--family {
-    background-image: url(/Images/Zuc/images/smarter-products/hero-family-kitchen.png)
+    background-image: url(../../../Images/Zuc/images/smarter-products/hero-family-kitchen.png)
 }
 
 .\--three-panels .zuc-panel.\--family span {
@@ -10846,7 +10846,7 @@ section.zuc-about-join {
 }
 
 .\--three-panels .zuc-panel.\--smartphone {
-    background-image: url(/Images/Zuc/images/shared/happy-family-laughing-746x536.png)
+    background-image: url(../../../Images/Zuc/images/shared/happy-family-laughing-746x536.png)
 }
 
 .\--three-panels .zuc-panel.\--smartphone span {
@@ -13830,7 +13830,7 @@ a.zuc-ec-blink:hover {
 }
 
 .zuc-ec-action-zone-bg-img {
-    background-image: url(/Images/Zuc/images/shapes/comfort-blob.svg);
+    background-image: url(../../../Images/Zuc/images/shapes/comfort-blob.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
